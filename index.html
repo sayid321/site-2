@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+     <title>Главная</title>
+  </head>
+  <body>
+     <header class="header">
+          <div class="containers">
+               <div class="header__top d-flex align-items-center justify-content-between">
+                    <div class="logo d-flex align-items-center">
+                         <a href="" class="logo__icon">
+                              <img src="img/icon/logo.svg" alt="">
+                         </a>
+                         <h3 class="logo__title">Байкальский отдых <span class="d-block">Турагентство</span></h3>
+                    </div>
+                    <div class="header__contact">
+                         <a href="tel:89243541540" class="header__contact-link"><img src="img/icon/tel-icon.svg" alt="">8-924-3-541-540</a>
+                         <a href="mailto:baikalholiday@mail.ru" class="header__contact-link"><img src="img/icon/mail-icon.svg" alt="">baikalholiday@mail.ru</a>
+                         <a href="#" class="header__contact-application">Оставить заявку</a>
+                    </div>
+                    <button class="toggle-btn" onclick="openMenu()">
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                    </button>
+                    <div class="line-bottom"></div>
+               </div>
+               <nav class="header__nav">
+                    <a href="#" class="header__nav-link">Бронирование</a>
+                    <a href="#" class="header__nav-link">Экскурсии</a>
+                    <a href="#" class="header__nav-link">Туры на Байкал</a>
+                    <a href="#" class="header__nav-link">О Байкале</a>
+                    <a href="#" class="header__nav-link">О нас</a>
+               </nav>
+               <div id="toggleMenu" class="header__menu">
+                    <ul class="header__menu-list">
+                         <button id="closeBtn" onclick="closeMenu()"><img src="img/icon/close-icon.svg" alt=""></button>
+
+                         <li class="header__menu-item">
+                              <h5 class="header__menu-item-title">Бронирование</h5>
+                              <ul class="header__menu-underlist">
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Отели и базы отдыха</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Теплоходы и катера</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Транспортные услуги</a>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="header__menu-item">
+                              <h5 class="header__menu-item-title">Экскурсии</h5>
+                              <ul class="header__menu-underlist">
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Экскурсии и туры</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Экстрим туры</a>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="header__menu-item">
+                              <h5 class="header__menu-item-title">Туры на Байкал</h5>
+                              <ul class="header__menu-underlist">
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Туры Зима-Весна</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Туры Лето-Осень</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Туры охоты и рыбалки</a>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="header__menu-item">
+                              <h5 class="header__menu-item-title">О Байкале</h5>
+                              <ul class="header__menu-underlist">
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Карта Байкала</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Достопримечательности</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Полезная информация</a>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="header__menu-item">
+                              <h5 class="header__menu-item-title">О Нас</h5>
+                              <ul class="header__menu-underlist">
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Контакты</a>
+                                   </li>
+                                   <li class="header__menu-underlist-item">
+                                        <a class="header__menu-underlist-link" href="#">Агентствам</a>
+                                   </li>
+                              </ul>
+                         </li>
+                    </ul>
+                    <div class="header__menu-footer">
+                         <a href="tel:89243541540" class="header__menu-footer-link"><img src="img/icon/tel-icon-gray.svg" alt="">8-924-3-541-540</a>
+                         <a href="mailto:baikalholiday@mail.ru" class="header__menu-footer-link"><img src="img/icon/mail-icon-gray.svg" alt="">baikalholiday@mail.ru</a>
+                         <button class="header__menu-footer-btn">Подобрать тур</button>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <main>
+          <section class="banner">
+               <div class="containers">
+                    <div class="banner__inner">
+                         <div class="banner__content">
+                              <h1 class="banner__title">
+                                   Путешествия
+                                   по Байкалу
+                              </h1>
+                              <p class="banner__text">Туры по самому красивому месту России.
+                                   Поехали с нами за новыми впечатлениями!</p>
+                              <a href="#" class="banner__link">подобрать тур</a>
+                         </div>
+                    </div>
+                    <button class="scroll__down-btn"><img src="img/icon/arrow-down.svg" alt=""></button>
+               </div>
+          </section>
+          <section class="services">
+               <div class="containers">
+                    <div class="row row-cols-lg-4 g-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img1.jpg" alt=""> 
+                                  <p>Турбазы на Байкале</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img2.jpg" alt=""> 
+                                  <p>Экскурсии и туры</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img3.jpg" alt=""> 
+                                  <p>Охота и рыбалка</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img4.jpg" alt=""> 
+                                  <p>Экстрим туры</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img5.jpg" alt=""> 
+                                  <p>Теплоходы, яхты</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img6.jpg" alt=""> 
+                                  <p>Красоты Байкала</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img7.jpg" alt=""> 
+                                  <p>Гостиницы в Улан-Удэ</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img8.jpg" alt=""> 
+                                  <p>Транспорт</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img9.jpg" alt=""> 
+                                  <p>Деловой туризм</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img10.jpg" alt=""> 
+                                  <p>Круизы по Байкалу</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img11.jpg" alt=""> 
+                                  <p>Зимние туры</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="services-cart">
+                                  <img src="img/services-img/img12.jpg" alt=""> 
+                                  <p>Карта Байкала</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="directions">
+               <div class="containers">
+                    <h2 class="directions__title">Основные направления деятельности</h2>
+                    <div class="row row-cols-lg-4 g-4 row-cols-sm-2 row-cols-1">
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon1.svg" alt="">
+                                   <p>Групповые и индивидуальные туры по Байкалу для российских и иностранных туристов</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon2.svg" alt="">
+                                   <p>Экскурсии по городу Улан-Удэ, Республике Бурятия, городу Иркутск</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon3.svg" alt="">
+                                   <p>Услуги гидов-переводчиков на любом иностранном языке</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon4.svg" alt="">
+                                   <p>Круизы и прогулки по Байкалу на теплоходах и катерах</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon5.svg" alt="">
+                                   <p>Профессиональная организация охоты и рыбалки на Байкале</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon6.svg" alt="">
+                                   <p>Аренда автотранспорта для экскурсий и пассажирских перевозок</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon7.svg" alt="">
+                                   <p>Бронирование гостиниц в городе Улан-Удэ и на Байкале</p>
+                              </div>
+                         </div>
+                         <div class="col">
+                              <div class="directions-cart">
+                                   <img src="img/icon/directions-icon8.svg" alt="">
+                                   <p>Организация индивидуальных туров и VIP-туров на Байкале</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="suggestion">
+               <div class="containers">
+                    <h2 class="suggestion__title">Популярные предложения</h2>
+                    <div class="row row-cols-lg-4 g-4">
+                         <div class="col-lg-6 col-sm-12">
+                              <div class="row row-cols-lg-2 row-cols-sm-1 g-4">
+                                   <div class="col-lg-6 col-sm-6 col-12">
+                                        <a href="#" class="suggestion__item">
+                                             <img src="img/suggestion-img/img1.jpg" alt="">
+                                             <p class="suggestion__item-p1">Зимний однодневный тур на Чивыркуйский залив</p>
+                                             <p class="suggestion__item-p2">Cтоимость 4000 руб.</p>
+                                             <div class="suggestion__item-shadow"></div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-6 col-sm-6 col-12">
+                                        <a href="#" class="suggestion__item">
+                                             <img src="img/suggestion-img/img2.jpg" alt="">
+                                             <p class="suggestion__item-p1">Зимний однодневный тур на остров Ольхон</p>
+                                             <p class="suggestion__item-p2">Cтоимость 5000 руб.</p>
+                                             <div class="suggestion__item-shadow"></div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-6 col-sm-6 col-12">
+                                        <a href="#" class="suggestion__item">
+                                             <img src="img/suggestion-img/img3.jpg" alt="">
+                                             <p class="suggestion__item-p1">Обзорная экскурсия по Улан-Удэ</p>
+                                             <p class="suggestion__item-p2">Продолжительность 3 часа Cтоимость от 500 руб.</p>
+                                             <div class="suggestion__item-shadow"></div>
+                                        </a>
+                                   </div>
+                                   <div class="col-lg-6 col-sm-6 col-12">
+                                        <a href="#" class="suggestion__item">
+                                             <img src="img/suggestion-img/img4.jpg" alt="">
+                                             <p class="suggestion__item-p1">Эко-отель «Байкальское шале», с. Максимиха</p>
+                                             <p class="suggestion__item-p2">Стоимость от 6500 руб.</p>
+                                             <div class="suggestion__item-shadow"></div>
+                                        </a>
+                                   </div>
+                              </div>
+                              
+                         </div>
+                         
+                         <div class="col-lg-6 col-sm-12">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img5.jpg" alt="">
+                                   <p class="suggestion__item-p1">Экскурсия в Иволгинский дацан</p>
+                                   <p class="suggestion__item-p2">Продолжительность 4 часа Cтоимость от 500 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img6.jpg" alt="">
+                                   <p class="suggestion__item-p1">Летний однодневный тур в Чивыркуйский залив</p>
+                                   <p class="suggestion__item-p2">Cтоимость 4000 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img7.jpg" alt="">
+                                   <p class="suggestion__item-p1">Отель «Белая Карета», с. Горячинск</p>
+                                   <p class="suggestion__item-p2">Cтоимость от 3200 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img8.jpg" alt="">
+                                   <p class="suggestion__item-p1">Однодневная поездка на Байкал «Байкальская Гавань»</p>
+                                   <p class="suggestion__item-p2">Стоимость от 1000 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img9.jpg" alt="">
+                                   <p class="suggestion__item-p1">Парк-отель <br> «Сагаан-Морин», с. Сухая</p>
+                                   <p class="suggestion__item-p2">Стоимость от 3500 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#"  class="suggestion__item">
+                                   <img src="img/suggestion-img/img10.jpg" alt="">
+                                   <p class="suggestion__item-p1">Летний однодневный тур на остров Ольхон</p>
+                                   <p class="suggestion__item-p2">Стоимость 8500 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img11.jpg" alt="">
+                                   <p class="suggestion__item-p1">Парк-отель «Байкальская Ривьера», с. Гремячинск</p>
+                                   <p class="suggestion__item-p2">Cтоимость от 3700 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col-sm-6 col-lg-3">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img12.jpg" alt="">
+                                   <p class="suggestion__item-p1">Зимний тур «Чивыркуйская сказка»</p>
+                                   <p class="suggestion__item-p2">Стоимость 2000 руб.</p>
+                                   <div class="suggestion__item-shadow"></div>
+                              </a>
+                         </div>
+                         <div class="col">
+                              <a href="#" class="suggestion__item">
+                                   <img src="img/suggestion-img/img13.jpg" alt="">
+                                   <p class="suggestion__item-link">Показать все предложения</p>
+                                   <div class="suggestion__item-bg"></div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="suggestion__line"></div>
+               </div>
+          </section>
+     </main>
+
+
+     <script src="js/main.js"></script>
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+     <!-- Option 2: Separate Popper and Bootstrap JS -->
+     <!--
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+     -->
+  </body>
+</html>
